@@ -1,9 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/material_dynamic_secondary50"
     tools:context=".LoginActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="LOG IN"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/emailaddress"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#30ffffff"
+        android:hint="Email address"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#30ffffff"
+        android:hint="Password"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:ignore="SpeakableTextPresentCheck"/>
+
+    <Button
+        android:id="@+id/loginme"
+        android:layout_width="411dp"
+        android:layout_height="65dp"
+        android:minHeight="48dp"
+        android:text="LOGIN ME"
+        tools:ignore="TextContrastCheck"/>
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="411dp"
+        android:layout_height="65dp"
+        android:minHeight="48dp"
+        android:text="SIGN UP"/>
+
+    <Button
+        android:id="@+id/forgotpassword"
+        android:layout_width="411dp"
+        android:layout_height="65dp"
+        android:minHeight="48dp"
+        android:text="FORGOT PASSWORD?"/>
+</LinearLayout>
